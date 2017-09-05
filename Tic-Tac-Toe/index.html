@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>tictactoe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">-->
+	<!--	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">-->
+	<!--	<link href="https://code.jquery.com/ui/1.12.1/themes/overcast/jquery-ui.css" rel="stylesheet" type="text/css">-->
+	<!--	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">-->
+	<!--	<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">-->
+	<!--	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lcd" type="text/css" />-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--	<script src="jquery-3.2.0.min.js"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nemoy" type="text/css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js"></script>
+	<!--	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/layla-digital" type="text/css" />-->
+</head>
+
+<body>
+	<div class="panel">
+		<div class="dash">
+			<div class="player1-dash">
+				<span class="icon" id='p1-icon'></span>
+				<span id="p1-txt">PLAYER</span>
+				<strong id="p1-weapone"></strong>
+				<i id="p1-points" style="color:aqua">0</i>
+			</div>
+			<div class="player2-dash">
+				<span class="icon" id="p2-icon"></span>
+				<span id="p2-txt">PLAYER</span>
+				<strong id="p2-weapone"></strong>
+				<i id="p2-points" style="color:gold">0</i>
+			</div>
+		</div>
+	</div>
+	<h1 id="htitle">Tic-Tac-Toe</h1>
+	<section id="main">
+		<div class="container-fluid">
+			<div class="m-boards " id="players">
+				<h3>How do you wanna play?</h3>
+				<h3 class="p-btn" id="one">One player</h3>
+				<h3 class="p-btn" id="two">Two players</h3>
+			</div>
+			<div class="m-boards " id="weapones">
+				<h3>Choose your weapone?</h3>
+				<h3 class="w-btn" id="X">X</h3>
+				<h3 class="w-btn" id="O">O</h3>
+			</div>
+
+			<table id="t-board">
+				<tr class="boxes">
+					<td>
+						<div class="box e" a="0" b="0" id="b1"></div>
+					</td>
+					<td>
+						<div class="box e" a="0" b="1" id="b2"></div>
+					</td>
+					<td>
+						<div class="box e" a="0" b="2" id="b3"></div>
+					</td>
+
+				</tr>
+				<tr class="boxes">
+					<td>
+						<div class="box e" a="1" b="0" id="b4"></div>
+					</td>
+					<td>
+						<div class="box e" a="1" b="1" id="b5"></div>
+					</td>
+					<td>
+						<div class="box e" a="1" b="2" id="b6"></div>
+					</td>
+
+				</tr>
+				<tr class="boxes">
+					<td>
+						<div class="box e" a="2" b="0" id="b7"></div>
+					</td>
+					<td>
+						<div class="box e" a="2" b="1" id="b8"></div>
+					</td>
+					<td>
+						<div class="box e" a="2" b="2" id="b9"></div>
+					</td>
+
+				</tr>
+			</table>
+			<div id="result">
+				<h1>.....</h1>
+				<img src="giphy_s.gif">
+				<h2></h2>
+			</div>
+		</div>
+
+
+	</section>
+
+</body>
+
+</html>
